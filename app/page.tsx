@@ -177,9 +177,9 @@ export default function HomePage() {
       Directions from Miami
     </a>
   </div>
-</aside>
+          </aside>
+        </div>
       </section>
-
       <section id="treats" className="mx-auto max-w-page px-4 py-16 sm:px-6">
         <p className="text-sm uppercase tracking-[0.16em] text-gold-deep">What she treats</p>
         <h2 className="mt-2 max-w-2xl font-serif text-4xl text-navy">
