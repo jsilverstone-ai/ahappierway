@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-navy text-cream">
       <div className="mx-auto grid max-w-page gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="font-serif text-2xl">A Happier Way</p>
+          <p className="font-serif text-2xl">Rewired Therapy</p>
           <p className="mt-2 text-sm text-cream/80">
             Psychiatric care with {site.provider}, {site.role}. Serving Aventura and Miami.
           </p>

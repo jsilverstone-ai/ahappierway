@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Kelsey Vivatson, PMHNP-BC, APRN, offers psychiatric assessment, medication management, and psychotherapy in Aventura, serving Miami and South Florida. ¡Hablamos Español!",
   alternates: { canonical: site.canonical },
   openGraph: {
-    title: "A Happier Way | Kelsey Vivatson, PMHNP-BC",
+    title: "Rewired Therapy | Kelsey Vivatson, PMHNP-BC",
     description:
       "Psychiatric care in Aventura for ADHD, autism, and mood concerns across the lifespan.",
     url: site.canonical,

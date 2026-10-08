@@ -77,7 +77,7 @@ export default function Header() {
       <div className="border-b border-gold/30 bg-cream/95 backdrop-blur">
         <div className="mx-auto flex max-w-page items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <a href="/" className="min-w-0">
-            <span className="block font-serif text-xl text-navy sm:text-2xl">A Happier Way</span>
+            <span className="block font-serif text-xl text-navy sm:text-2xl">Rewired Therapy</span>
             <span className="block truncate text-xs text-mute">
               {site.provider}
             </span>

@@ -92,7 +92,7 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
-  name: "A Happier Way",
+  name: "Rewired Therapy",
   url: site.canonical,
   telephone: site.phoneTel,
   image: site.canonical,
@@ -152,19 +152,32 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <aside className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p className="text-sm text-gold">The Aventura office</p>
-            <p className="mt-3 font-serif text-2xl">{site.street}</p>
-            <p className="mt-1 text-cream/80">
-              {site.city}, {site.region} {site.postal}
-            </p>
-            <p className="mt-4 text-sm text-cream/80">¡Hablamos Español!</p>
-            <p className="mt-1 text-sm text-cream/80">By appointment</p>
-            <a href={site.maps} className="mt-4 inline-block text-sm text-gold hover:text-cream">
-              Directions from Miami
-            </a>
-          </aside>
-        </div>
+<aside className="space-y-4">
+  <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+    <img
+      src="/kelsey-vivatson.jpg"
+      alt="Kelsey Vivatson, PMHNP-BC, APRN, clinical director of Rewired Therapy, in a white coat"
+      width={800}
+      height={1000}
+      className="aspect-[4/5] w-full object-cover object-top"
+    />
+    <figcaption className="px-4 py-3 text-sm text-cream/80">
+      Kelsey Vivatson, PMHNP-BC, APRN
+    </figcaption>
+  </figure>
+  <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+    <p className="text-sm text-gold">The Aventura office</p>
+    <p className="mt-3 font-serif text-2xl">{site.street}</p>
+    <p className="mt-1 text-cream/80">
+      {site.city}, {site.region} {site.postal}
+    </p>
+    <p className="mt-4 text-sm text-cream/80">¡Hablamos Español!</p>
+    <p className="mt-1 text-sm text-cream/80">By appointment</p>
+    <a href={site.maps} className="mt-4 inline-block text-sm text-gold hover:text-cream">
+      Directions from Miami
+    </a>
+  </div>
+</aside>
       </section>
 
       <section id="treats" className="mx-auto max-w-page px-4 py-16 sm:px-6">
