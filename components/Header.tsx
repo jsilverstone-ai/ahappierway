@@ -68,9 +68,9 @@ export default function Header() {
           </p>
           <div className="flex items-center gap-3">
             <SocialIcons className="hidden sm:flex" />
-            <a href={`tel:${site.phoneTel}`} className="whitespace-nowrap hover:text-gold-deep">
-              {site.phoneDisplay}
-            </a>
+<a href={`tel:${site.phoneTel}`} className="whitespace-nowrap text-sm font-semibold hover:text-gold-deep">
+  Call or text {site.phoneDisplay}
+</a>
           </div>
         </div>
       </div>
