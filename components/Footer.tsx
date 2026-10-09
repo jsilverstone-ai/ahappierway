@@ -7,7 +7,15 @@ export default function Footer() {
         <div>
           <p className="font-serif text-2xl">Rewired Therapy</p>
           <p className="mt-2 text-sm text-cream/80">
-            Psychiatric care with {site.provider}, {site.role}. Serving Aventura and Miami.
+            Psychiatric care with {site.provider}, {site.role}. The practice site is{" "}
+            <a href={site.canonical} className="text-gold hover:text-cream">
+              ahappierway.com
+            </a>
+            , serving Aventura and Miami.
+          </p>
+          <p className="mt-3 text-sm text-cream/80">
+            Accepted insurance: Cigna, Aetna, UnitedHealthcare, and select BCBS. Coverage
+            depends on the plan.
           </p>
           <ul className="mt-4 flex gap-2">
             {site.social.map((item) => (
@@ -74,7 +82,7 @@ export default function Footer() {
             , the LegitScript-certified clinic at this Aventura office. This domain does not yet
             have its own certification seal.
           </p>
-          <p>© {new Date().getFullYear()} A Happier Way · Aventura, Florida</p>
+          <p>© {new Date().getFullYear()} Rewired Therapy · Aventura, Florida · ahappierway.com</p>
         </div>
       </div>
     </footer>

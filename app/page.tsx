@@ -95,7 +95,7 @@ const jsonLd = {
   name: "Rewired Therapy",
   url: site.canonical,
   telephone: site.phoneTel,
-  image: site.canonical,
+  image: "https://ahappierway.com/kelsey-vivatson.jpg",
   medicalSpecialty: "Psychiatric",
   address: {
     "@type": "PostalAddress",
@@ -122,64 +122,54 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className="bg-navy text-cream">
-        <div className="mx-auto grid max-w-page gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.3fr_0.7fr] lg:py-24">
+      <section className="bg-[#ececec]">
+        <div className="mx-auto grid max-w-page items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:py-20">
           <div>
-            <p className="text-sm uppercase tracking-[0.18em] text-gold">
-              Psychiatric care in Aventura · Serving Miami
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-gold-deep">
+              Welcome to Rewired Therapy
             </p>
-            <h1 className="mt-4 font-serif text-4xl leading-tight sm:text-6xl">
-              Kelsey Vivatson, PMHNP-BC, APRN
+            <h1 className="mt-3 max-w-xl font-serif text-4xl font-bold leading-tight text-ink sm:text-5xl">
+              A happier way to psychiatric care starts here.
             </h1>
-            <p className="mt-3 text-lg text-gold">Clinical Director</p>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-cream/85">
-              Board-certified psychiatric mental health nurse practitioner, licensed in Florida
-              and North Dakota. She offers diagnostic assessment, evidence-based prescribing, and
-              psychotherapy for ADHD, autism, and mood concerns across the lifespan.
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-mute">
+              Kelsey Vivatson, PMHNP-BC, APRN, is clinical director of Rewired Therapy in
+              Aventura. She offers assessment, medication management, and psychotherapy for
+              ADHD, autism, and mood concerns across the lifespan.
+            </p>
+            <p className="mt-5 max-w-xl text-sm text-ink">
+              Accepted insurance: Cigna, Aetna, UnitedHealthcare, and select BCBS. Coverage
+              depends on the plan. Call to confirm before a visit.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="rounded-full bg-gold px-5 py-3 text-sm font-semibold text-navy hover:bg-cream"
+                className="rounded-sm bg-gold px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white hover:bg-gold-deep"
               >
-                Request a free consult
+                Book your free consultation
               </a>
               <a
                 href={`tel:${site.phoneTel}`}
-                className="rounded-full border border-cream/30 px-5 py-3 text-sm font-semibold hover:border-gold"
+                className="rounded-sm border border-ink/15 px-5 py-3 text-sm font-semibold text-ink hover:border-gold"
               >
                 Call {site.phoneDisplay}
               </a>
             </div>
           </div>
-<aside className="space-y-4">
-  <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-    <img
-      src="/kelsey-vivatson.jpg"
-      alt="Kelsey Vivatson, PMHNP-BC, APRN, clinical director of Rewired Therapy, in a white coat"
-      width={800}
-      height={1000}
-      className="aspect-[4/5] w-full object-cover object-top"
-    />
-    <figcaption className="px-4 py-3 text-sm text-cream/80">
-      Kelsey Vivatson, PMHNP-BC, APRN
-    </figcaption>
-  </figure>
-  <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-    <p className="text-sm text-gold">The Aventura office</p>
-    <p className="mt-3 font-serif text-2xl">{site.street}</p>
-    <p className="mt-1 text-cream/80">
-      {site.city}, {site.region} {site.postal}
-    </p>
-    <p className="mt-4 text-sm text-cream/80">¡Hablamos Español!</p>
-    <p className="mt-1 text-sm text-cream/80">By appointment</p>
-    <a href={site.maps} className="mt-4 inline-block text-sm text-gold hover:text-cream">
-      Directions from Miami
-    </a>
-  </div>
-          </aside>
+          <figure className="overflow-hidden bg-white">
+            <img
+              src="/kelsey-vivatson.jpg"
+              alt="Kelsey Vivatson, PMHNP-BC, APRN, clinical director of Rewired Therapy, in a white coat"
+              width={800}
+              height={1000}
+              className="aspect-[4/5] w-full object-cover object-top"
+            />
+            <figcaption className="px-4 py-3 text-sm text-mute">
+              Kelsey Vivatson, PMHNP-BC, APRN · Aventura
+            </figcaption>
+          </figure>
         </div>
       </section>
+
       <section id="treats" className="mx-auto max-w-page px-4 py-16 sm:px-6">
         <p className="text-sm uppercase tracking-[0.16em] text-gold-deep">What she treats</p>
         <h2 className="mt-2 max-w-2xl font-serif text-4xl text-navy">

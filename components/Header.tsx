@@ -43,7 +43,7 @@ function SocialIcons({ className = "" }: { className?: string }) {
             target="_blank"
             rel="noreferrer"
             aria-label={item.label}
-            className="grid h-8 w-8 place-items-center rounded-full border border-white/20 text-cream hover:border-gold hover:text-gold"
+            className="grid h-8 w-8 place-items-center rounded-full border border-ink/15 text-ink hover:border-gold hover:text-gold-deep"
           >
             <Icon label={item.label} />
           </a>
@@ -59,7 +59,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="bg-navy text-cream">
+      <div className="bg-white text-ink">
         <div className="mx-auto flex max-w-page items-center justify-between gap-4 px-4 py-2 text-xs sm:px-6">
           <p className="truncate">
             Aventura · Miami · South Florida
@@ -68,7 +68,7 @@ export default function Header() {
           </p>
           <div className="flex items-center gap-3">
             <SocialIcons className="hidden sm:flex" />
-            <a href={`tel:${site.phoneTel}`} className="whitespace-nowrap hover:text-gold">
+            <a href={`tel:${site.phoneTel}`} className="whitespace-nowrap hover:text-gold-deep">
               {site.phoneDisplay}
             </a>
           </div>
@@ -77,10 +77,13 @@ export default function Header() {
       <div className="border-b border-gold/30 bg-cream/95 backdrop-blur">
         <div className="mx-auto flex max-w-page items-center justify-between gap-4 px-4 py-3 sm:px-6">
           <a href="/" className="min-w-0">
-            <span className="block font-serif text-xl text-navy sm:text-2xl">Rewired Therapy</span>
-            <span className="block truncate text-xs text-mute">
-              {site.provider}
-            </span>
+            <img
+              src="/logo.png"
+              alt="Rewired — A Happier Way"
+              width={400}
+              height={400}
+              className="h-14 w-auto"
+            />
           </a>
           <nav aria-label="Primary" className="hidden items-center gap-5 lg:flex">
             {nav.map((item) =>
@@ -114,7 +117,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <a
               href="/#contact"
-              className="hidden rounded-full bg-navy px-4 py-2 text-xs font-semibold tracking-wide text-cream hover:bg-navy-soft sm:inline-block"
+              className="rounded-full bg-gold px-4 py-2 text-xs font-semibold tracking-wide text-white hover:bg-gold-deep sm:inline-block"
             >
               Free consult
             </a>
