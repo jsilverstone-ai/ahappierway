@@ -82,7 +82,7 @@ export default function Header() {
               alt="Rewired — A Happier Way"
               width={400}
               height={400}
-              className="h-14 w-auto"
+              className="h-20 w-auto sm:h-24"
             />
           </a>
           <nav aria-label="Primary" className="hidden items-center gap-5 lg:flex">
@@ -117,7 +117,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <a
               href="/#contact"
-              className="rounded-full bg-gold px-4 py-2 text-xs font-semibold tracking-wide text-white hover:bg-gold-deep sm:inline-block"
+              className="rounded-sm bg-gold px-4 py-2.5 text-sm font-semibold text-white hover:bg-gold-deep"
             >
               Free consult
             </a>
