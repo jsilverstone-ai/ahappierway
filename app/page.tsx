@@ -157,7 +157,7 @@ export default function HomePage() {
           </div>
           <figure className="relative">
             <img
-              src="/kelsey-vivatson.png"
+              src="/kelsey-vivatson.jpg"
               alt="Kelsey Vivatson, PMHNP-BC, APRN, clinical director of Rewired Therapy, in a white coat"
               width={1200}
               height={900}
