@@ -155,15 +155,17 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <figure className="relative">
+          <figure className="border-4 border-gold bg-white p-2 shadow-sm">
             <img
               src="/kelsey-vivatson.jpg"
               alt="Kelsey Vivatson, PMHNP-BC, APRN, clinical director of Rewired Therapy, in a white coat"
-              width={1200}
-              height={900}
-              className="w-full object-contain object-bottom"
+              width={800}
+              height={1000}
+              className="aspect-[4/5] w-full object-cover object-top"
             />
-            <figcaption className="sr-only">Kelsey Vivatson, PMHNP-BC, APRN · Aventura</figcaption>
+            <figcaption className="px-2 py-3 text-center text-sm text-mute">
+              Kelsey Vivatson, PMHNP-BC, APRN
+            </figcaption>
           </figure>
         </div>
       </section>
